@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/spinnerItemStyle"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:gravity="center"
+    android:background="@drawable/buttonshadow"
+    android:shadowColor="@color/text_shadow"
+    android:shadowDx="3.0"
+    android:shadowDy="2.0"
+    android:shadowRadius="2.0"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"/>

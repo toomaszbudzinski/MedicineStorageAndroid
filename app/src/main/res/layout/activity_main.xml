@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.user.friidgeandroid.MainActivity">
+    <TableRow  >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="2.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="3.0"
+            android:text="Witaj w aplikacji:" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:minHeight="400px">
+
+        <Button
+            android:id="@+id/buttonAddDeleteProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Skanuj kod"
+            android:background="@drawable/buttonshadow"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="3.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="match_parent"
+        android:minHeight="400px"
+        >
+
+        <Button
+            android:id="@+id/buttonLookProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/buttonshadow"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="3.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:text="Baza moich leków" />
+    </TableRow>
+
+
+
+</TableLayout>

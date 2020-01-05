@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+
+    <!-- Name Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="3.0"
+        />
+
+    <TextView
+        android:id="@+id/textViewEanAdd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Product_ean"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="3.0"/>
+    <!-- Input Name -->
+    <EditText android:id="@+id/inputName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:singleLine="true"
+        android:hint="Nazwa Leku"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="3.0"/>
+
+    <!-- Price Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Data ważności"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="3.0"
+        />
+    <!-- Input Price -->
+    <TableRow
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        >
+
+
+        <!-- Description Label -->
+
+        <!-- Input description -->
+        <Spinner
+            android:id="@+id/spinnerDayAdd"
+            android:layout_column="1"
+            android:layout_width="120dp"
+            android:layout_height="56dp"
+            android:layout_margin="5dip"
+            android:gravity="center"
+            android:layout_marginBottom="15dip"
+            android:entries="@array/day_aray"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="3.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:popupBackground="@drawable/back"
+            android:textStyle="bold"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerMonthAdd"
+            android:layout_width="120dp"
+            android:layout_height="56dp"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_column="2"
+            android:popupBackground="@drawable/back"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="3.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/spinnerYearAdd"
+            android:layout_width="120dp"
+            android:layout_height="56dp"
+            android:layout_margin="5dip"
+            android:inputType="number"
+            android:layout_marginBottom="15dip"
+            android:gravity="center"
+            android:layout_column="3"
+            android:popupBackground="@drawable/back"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="3.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"/>
+
+    </TableRow>
+    <!-- Button Create Product -->
+    <Button android:id="@+id/btnCreateProduct"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Product"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonshadow"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="3.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        />
+
+</TableLayout>
